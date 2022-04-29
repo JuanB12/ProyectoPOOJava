@@ -28,15 +28,16 @@ public class Interfazpago extends javax.swing.JFrame {
         Textemail = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButtonPagar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jButtonInicio = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         Textdescuento = new javax.swing.JTextField();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
+        jButtonPagar = new javax.swing.JButton();
+        jButtonInicio = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -51,9 +52,9 @@ public class Interfazpago extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("METODO DE PAGO");
-        jpE_S.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 50));
+        jpE_S.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 50));
 
-        getContentPane().add(jpE_S, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 50));
+        getContentPane().add(jpE_S, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 50));
 
         Textpagador.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Textpagador.addActionListener(new java.awt.event.ActionListener() {
@@ -61,13 +62,13 @@ public class Interfazpago extends javax.swing.JFrame {
                 TextpagadorActionPerformed(evt);
             }
         });
-        getContentPane().add(Textpagador, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 70, 350, 30));
+        getContentPane().add(Textpagador, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 70, 360, 30));
 
         Textnomapepag.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(Textnomapepag, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 350, 30));
+        getContentPane().add(Textnomapepag, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 360, 30));
 
         Textvalor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(Textvalor, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 350, 30));
+        getContentPane().add(Textvalor, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 360, 30));
 
         Textemail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Textemail.addActionListener(new java.awt.event.ActionListener() {
@@ -75,7 +76,7 @@ public class Interfazpago extends javax.swing.JFrame {
                 TextemailActionPerformed(evt);
             }
         });
-        getContentPane().add(Textemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 350, 30));
+        getContentPane().add(Textemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 360, 30));
 
         jLabel1.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel1.setText("IDENTIFICACIÓN DEL PAGADOR");
@@ -85,17 +86,6 @@ public class Interfazpago extends javax.swing.JFrame {
         jLabel2.setText("NOMBRES Y APELLIDOS DEL PAGADOR");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 250, 30));
 
-        jButtonPagar.setBackground(new java.awt.Color(255, 255, 255));
-        jButtonPagar.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        jButtonPagar.setText("IMPRIMIR");
-        jButtonPagar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jButtonPagar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonPagarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonPagar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 160, 40));
-
         jLabel3.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel3.setText("VALOR DEL PAGO");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 250, 30));
@@ -104,31 +94,22 @@ public class Interfazpago extends javax.swing.JFrame {
         jLabel4.setText("EMAIL");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 250, 30));
 
-        jButtonInicio.setBackground(new java.awt.Color(255, 255, 255));
-        jButtonInicio.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        jButtonInicio.setText("INICIO");
-        jButtonInicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jButtonInicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonInicioActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 160, 40));
-
         jLabel5.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel5.setText("DESCUENTO");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 250, 30));
 
         Textdescuento.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(Textdescuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, 350, 30));
+        getContentPane().add(Textdescuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, 360, 30));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Contado", "Credito", "Credito-contado" }));
         jComboBox1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 350, 30));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 360, 30));
 
         jLabel6.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel6.setText("TIPO DE FACTURA");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 250, 30));
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
@@ -139,7 +120,31 @@ public class Interfazpago extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 140, 40));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 20, 150, 40));
+
+        jButtonPagar.setBackground(new java.awt.Color(255, 255, 255));
+        jButtonPagar.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jButtonPagar.setText("IMPRIMIR");
+        jButtonPagar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButtonPagar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPagarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonPagar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 160, 40));
+
+        jButtonInicio.setBackground(new java.awt.Color(255, 255, 255));
+        jButtonInicio.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jButtonInicio.setText("INICIO");
+        jButtonInicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButtonInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonInicioActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 160, 40));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 640, 80));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -230,6 +235,7 @@ public class Interfazpago extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jpE_S;
     // End of variables declaration//GEN-END:variables
 }
