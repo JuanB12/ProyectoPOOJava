@@ -44,10 +44,10 @@ public class Interfazcliente extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TxtNombre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TxtNombre.setBorder(null);
         TxtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TxtNombreActionPerformed(evt);
@@ -56,14 +56,16 @@ public class Interfazcliente extends javax.swing.JFrame {
         getContentPane().add(TxtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 160, 30));
 
         jLabel2.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Nombre");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 53, 120, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 140, 30));
 
         jLabel3.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Apellido");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 130, 20));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 140, 30));
 
-        TxtApellido.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TxtApellido.setBorder(null);
         TxtApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TxtApellidoActionPerformed(evt);
@@ -72,10 +74,11 @@ public class Interfazcliente extends javax.swing.JFrame {
         getContentPane().add(TxtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 160, 30));
 
         jLabel4.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        jLabel4.setText("Cedula");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 130, 20));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Cédula");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 140, 30));
 
-        TxtCedula.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TxtCedula.setBorder(null);
         TxtCedula.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TxtCedulaActionPerformed(evt);
@@ -84,7 +87,8 @@ public class Interfazcliente extends javax.swing.JFrame {
         getContentPane().add(TxtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 160, 30));
 
         jLabel5.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        jLabel5.setText("Correo Electronico");
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Correo Electrónico");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 140, 30));
 
         TablaDatos.setAutoCreateRowSorter(true);
@@ -109,10 +113,10 @@ public class Interfazcliente extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 490, 140));
 
-        TxtCorreo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TxtCorreo.setBorder(null);
         getContentPane().add(TxtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 160, 30));
 
-        TxtTelefono.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TxtTelefono.setBorder(null);
         TxtTelefono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TxtTelefonoActionPerformed(evt);
@@ -121,10 +125,11 @@ public class Interfazcliente extends javax.swing.JFrame {
         getContentPane().add(TxtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 160, 170, 30));
 
         jLabel9.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        jLabel9.setText("Telefono");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 157, 80, 30));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("Teléfono");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 110, 30));
 
-        TxtDireccion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TxtDireccion.setBorder(null);
         TxtDireccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TxtDireccionActionPerformed(evt);
@@ -133,32 +138,35 @@ public class Interfazcliente extends javax.swing.JFrame {
         getContentPane().add(TxtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, 170, 30));
 
         jLabel8.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        jLabel8.setText("Direccion");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 90, 30));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Dirección");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 100, 30));
 
         jLabel7.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Sexo");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 90, 30));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 100, 30));
 
-        TxtSexo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TxtSexo.setBorder(null);
         TxtSexo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TxtSexoActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, 170, 30));
+        getContentPane().add(TxtSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 170, 30));
 
         jLabel6.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Ciudad");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 90, 30));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, 100, 30));
 
-        TxtCiudad.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TxtCiudad.setBorder(null);
         TxtCiudad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TxtCiudadActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, 170, 30));
+        getContentPane().add(TxtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 170, 30));
 
         Agregar.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         Agregar.setText("AGREGAR");
@@ -171,7 +179,7 @@ public class Interfazcliente extends javax.swing.JFrame {
         getContentPane().add(Agregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 110, 30));
 
         Cancelar.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        Cancelar.setText("CANCELAR");
+        Cancelar.setText("INICIO");
         Cancelar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

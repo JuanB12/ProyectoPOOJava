@@ -57,10 +57,6 @@ public class Login extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         IconoUserLogin = new javax.swing.JLabel();
         MenuLogin = new javax.swing.JLabel();
-        Minimizar = new javax.swing.JPanel();
-        MinimizarVentana = new javax.swing.JLabel();
-        CerrarLogin = new javax.swing.JPanel();
-        CerrarVentana = new javax.swing.JLabel();
         UsuarioLogin = new javax.swing.JLabel();
         IngresoUsuario = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
@@ -78,11 +74,10 @@ public class Login extends javax.swing.JFrame {
         OcultarContrasena = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         IconoUserLogin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -108,75 +103,6 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(MenuLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 60, 40));
-
-        Minimizar.setBackground(new java.awt.Color(255, 255, 255));
-        Minimizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Minimizar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                MinimizarMouseMoved(evt);
-            }
-        });
-        Minimizar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                MinimizarMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                MinimizarMouseExited(evt);
-            }
-        });
-
-        MinimizarVentana.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MinimizarVentana.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/angulo-pequeno-hacia-abajo.png"))); // NOI18N
-        MinimizarVentana.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        MinimizarVentana.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                MinimizarVentanaMouseMoved(evt);
-            }
-        });
-        MinimizarVentana.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                MinimizarVentanaMouseExited(evt);
-            }
-        });
-        Minimizar.add(MinimizarVentana);
-
-        jPanel1.add(Minimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 8, 40, 40));
-
-        CerrarLogin.setBackground(new java.awt.Color(255, 255, 255));
-        CerrarLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        CerrarLogin.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                CerrarLoginMouseMoved(evt);
-            }
-        });
-        CerrarLogin.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CerrarLoginMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                CerrarLoginMouseExited(evt);
-            }
-        });
-
-        CerrarVentana.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CerrarVentana.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cruzar.png"))); // NOI18N
-        CerrarVentana.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        CerrarVentana.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                CerrarVentanaMouseMoved(evt);
-            }
-        });
-        CerrarVentana.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CerrarVentanaMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                CerrarVentanaMouseExited(evt);
-            }
-        });
-        CerrarLogin.add(CerrarVentana);
-
-        jPanel1.add(CerrarLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 40, 40));
 
         UsuarioLogin.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         UsuarioLogin.setText("Usuario");
@@ -317,16 +243,6 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void CerrarLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CerrarLoginMouseClicked
-        int Dialog = JOptionPane.YES_NO_OPTION;
-        int Result = JOptionPane.showConfirmDialog(null, "¿Desea salir del Login?", "Exit",
-                Dialog);
-        if (Result == 0) {
-            System.exit(0);
-        }
-
-    }//GEN-LAST:event_CerrarLoginMouseClicked
-
     private void MenuLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuLoginMouseClicked
         // --> 
         AnimationClass Internet = new AnimationClass();
@@ -338,19 +254,6 @@ public class Login extends javax.swing.JFrame {
         Gmail.jLabelXLeft(10, -40, 10, 10, GmailLogin);
     }//GEN-LAST:event_MenuLoginMouseClicked
 
-    private void CerrarVentanaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CerrarVentanaMouseClicked
-        int Dialog = JOptionPane.YES_NO_OPTION;
-        int Result = JOptionPane.showConfirmDialog(null, "¿Desea salir del Login?", "Exit",
-                Dialog);
-        if (Result == 0) {
-            System.exit(0);
-        }
-    }//GEN-LAST:event_CerrarVentanaMouseClicked
-
-    private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked
-        this.setState(Login.ICONIFIED);
-    }//GEN-LAST:event_MinimizarMouseClicked
-
     private void IconoUserLoginMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IconoUserLoginMouseMoved
         IconoUserLogin.setBorder(javax.swing.BorderFactory.createLineBorder(Color.gray));
     }//GEN-LAST:event_IconoUserLoginMouseMoved
@@ -358,38 +261,6 @@ public class Login extends javax.swing.JFrame {
     private void IconoUserLoginMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IconoUserLoginMouseExited
         IconoUserLogin.setBorder(javax.swing.BorderFactory.createLineBorder(Color.white));
     }//GEN-LAST:event_IconoUserLoginMouseExited
-
-    private void CerrarLoginMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CerrarLoginMouseMoved
-        CerrarLogin.setBorder(javax.swing.BorderFactory.createLineBorder(Color.gray));
-    }//GEN-LAST:event_CerrarLoginMouseMoved
-
-    private void CerrarLoginMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CerrarLoginMouseExited
-        CerrarLogin.setBorder(javax.swing.BorderFactory.createLineBorder(Color.white));
-    }//GEN-LAST:event_CerrarLoginMouseExited
-
-    private void CerrarVentanaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CerrarVentanaMouseMoved
-        CerrarLogin.setBorder(javax.swing.BorderFactory.createLineBorder(Color.gray));
-    }//GEN-LAST:event_CerrarVentanaMouseMoved
-
-    private void CerrarVentanaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CerrarVentanaMouseExited
-        CerrarLogin.setBorder(javax.swing.BorderFactory.createLineBorder(Color.white));
-    }//GEN-LAST:event_CerrarVentanaMouseExited
-
-    private void MinimizarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseMoved
-        Minimizar.setBorder(javax.swing.BorderFactory.createLineBorder(Color.gray));
-    }//GEN-LAST:event_MinimizarMouseMoved
-
-    private void MinimizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseExited
-        Minimizar.setBorder(javax.swing.BorderFactory.createLineBorder(Color.white));
-    }//GEN-LAST:event_MinimizarMouseExited
-
-    private void MinimizarVentanaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarVentanaMouseMoved
-        Minimizar.setBorder(javax.swing.BorderFactory.createLineBorder(Color.gray));
-    }//GEN-LAST:event_MinimizarVentanaMouseMoved
-
-    private void MinimizarVentanaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarVentanaMouseExited
-        Minimizar.setBorder(javax.swing.BorderFactory.createLineBorder(Color.white));
-    }//GEN-LAST:event_MinimizarVentanaMouseExited
 
     private void RegistrarseMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegistrarseMouseMoved
         Registrarse.setBorder(javax.swing.BorderFactory.createLineBorder(Color.gray));
@@ -550,8 +421,6 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonLogin;
-    private javax.swing.JPanel CerrarLogin;
-    private javax.swing.JLabel CerrarVentana;
     private javax.swing.JLabel ContrasenaLogin;
     private javax.swing.JLabel GmailLogin;
     private javax.swing.JLabel IconoUserLogin;
@@ -559,8 +428,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JTextField IngresoUsuario;
     private javax.swing.JLabel InternetLogin;
     private javax.swing.JLabel MenuLogin;
-    private javax.swing.JPanel Minimizar;
-    private javax.swing.JLabel MinimizarVentana;
     private javax.swing.JLabel OcultarContrasena;
     private javax.swing.JLabel OjoLogin;
     private javax.swing.JLabel Registrarse;

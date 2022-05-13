@@ -48,7 +48,7 @@ public class Interfazproveedor extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TxtNombre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -163,7 +163,7 @@ public class Interfazproveedor extends javax.swing.JFrame {
         getContentPane().add(Agregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 10, 120, 30));
 
         Cancelar.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        Cancelar.setText("CANCELAR");
+        Cancelar.setText("INICIO");
         Cancelar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
