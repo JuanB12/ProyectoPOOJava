@@ -7,11 +7,14 @@ package Menu;
 
 import Registro.*;
 import javax.swing.JOptionPane;
-import Proovedor.Interfazproveedor;
+import Proovedor.InterfazProovedores;
 import Proovedor.Proveedor;
 import Pago.Interfazpago;
 import Pago.Pagos;
 import Clientes.Interfazcliente;
+import Productos.InterfazProductos;
+import java.awt.Color;
+import Inventario.InterfazInventario;
 
 /**
  *
@@ -43,8 +46,8 @@ public class Menu extends javax.swing.JFrame {
         jLabelCliente1 = new javax.swing.JLabel();
         jButtonPagos = new javax.swing.JButton();
         jLabelProveedor1 = new javax.swing.JLabel();
-        jButtonCarrito = new javax.swing.JButton();
-        jLabelCarrito = new javax.swing.JLabel();
+        jButtonINVENTARIO = new javax.swing.JButton();
+        jLabelINVENTARIO = new javax.swing.JLabel();
         jButtonBuscarproducto = new javax.swing.JButton();
         jLabelProductos = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -121,21 +124,26 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(jLabelProveedor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 140, 30));
 
-        jButtonCarrito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/anadir-al-carrito.png"))); // NOI18N
-        jButtonCarrito.setBorderPainted(false);
-        jButtonCarrito.setContentAreaFilled(false);
-        jButtonCarrito.addActionListener(new java.awt.event.ActionListener() {
+        jButtonINVENTARIO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/anadir-al-carrito.png"))); // NOI18N
+        jButtonINVENTARIO.setBorderPainted(false);
+        jButtonINVENTARIO.setContentAreaFilled(false);
+        jButtonINVENTARIO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCarritoActionPerformed(evt);
+                jButtonINVENTARIOActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonCarrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 110, 80));
+        getContentPane().add(jButtonINVENTARIO, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 110, 80));
 
-        jLabelCarrito.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
-        jLabelCarrito.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelCarrito.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelCarrito.setText("CARRITO");
-        getContentPane().add(jLabelCarrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 130, 30));
+        jLabelINVENTARIO.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jLabelINVENTARIO.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelINVENTARIO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelINVENTARIO.setText("INVENTARIO");
+        jLabelINVENTARIO.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelINVENTARIOMouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabelINVENTARIO, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 130, 30));
 
         jButtonBuscarproducto.setBackground(new java.awt.Color(255, 255, 255));
         jButtonBuscarproducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/producto.png"))); // NOI18N
@@ -152,7 +160,12 @@ public class Menu extends javax.swing.JFrame {
         jLabelProductos.setForeground(new java.awt.Color(255, 255, 255));
         jLabelProductos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelProductos.setText("PRODUCTOS");
-        getContentPane().add(jLabelProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 420, 150, 40));
+        jLabelProductos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelProductosMouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabelProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 410, 150, 40));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/flecha.png"))); // NOI18N
@@ -181,6 +194,7 @@ public class Menu extends javax.swing.JFrame {
         jpE_S.setForeground(new java.awt.Color(255, 255, 255));
         jpE_S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabelBienvenido.setBackground(new java.awt.Color(255, 255, 255));
         jLabelBienvenido.setFont(new java.awt.Font("Roboto Black", 1, 36)); // NOI18N
         jLabelBienvenido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelBienvenido.setText("BIENVENIDO");
@@ -208,7 +222,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabelCliente1MouseClicked
 
     private void jButtonProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonProveedorActionPerformed
-        Interfazproveedor interprov = new Interfazproveedor();
+        InterfazProovedores interprov = new InterfazProovedores();
         interprov.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButtonProveedorActionPerformed
@@ -219,12 +233,14 @@ public class Menu extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButtonPagosActionPerformed
 
-    private void jButtonCarritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCarritoActionPerformed
-        /*BDD*/
-    }//GEN-LAST:event_jButtonCarritoActionPerformed
+    private void jButtonINVENTARIOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonINVENTARIOActionPerformed
+        InterfazInventario interfazinv = new InterfazInventario(); 
+        interfazinv.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButtonINVENTARIOActionPerformed
 
     private void jLabelProveedor1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelProveedor1MouseClicked
-        Interfazproveedor interprov = new Interfazproveedor();
+        InterfazProovedores interprov = new InterfazProovedores();
         interprov.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jLabelProveedor1MouseClicked
@@ -239,12 +255,26 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButtonBuscarproductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBuscarproductoActionPerformed
-        // TODO add your handling code here:
+        InterfazProductos interproduc = new InterfazProductos();
+        interproduc.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButtonBuscarproductoActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jLabelProductosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelProductosMouseClicked
+        InterfazProductos interproduc = new InterfazProductos();
+        interproduc.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jLabelProductosMouseClicked
+
+    private void jLabelINVENTARIOMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelINVENTARIOMouseClicked
+        InterfazInventario interfazinv = new InterfazInventario(); 
+        interfazinv.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jLabelINVENTARIOMouseClicked
 
     /**
      * @param args the command line arguments
@@ -287,16 +317,16 @@ public class Menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonBuscarproducto;
-    private javax.swing.JButton jButtonCarrito;
     private javax.swing.JButton jButtonCliente;
+    private javax.swing.JButton jButtonINVENTARIO;
     private javax.swing.JButton jButtonPagos;
     private javax.swing.JButton jButtonProveedor;
     private javax.swing.JLabel jLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabelBienvenido;
-    private javax.swing.JLabel jLabelCarrito;
     private javax.swing.JLabel jLabelCliente1;
+    private javax.swing.JLabel jLabelINVENTARIO;
     private javax.swing.JLabel jLabelPagos;
     private javax.swing.JLabel jLabelProductos;
     private javax.swing.JLabel jLabelProveedor1;

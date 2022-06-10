@@ -3,6 +3,7 @@ package Pago;
 import Registro.*;
 import javax.swing.JOptionPane;
 import Menu.Menu;
+//import java.util.ArrayList;
 
 public class Interfazpago extends javax.swing.JFrame {
 

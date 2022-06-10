@@ -20,6 +20,9 @@ public class Interfazcliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabelAGREGAR = new javax.swing.JLabel();
+        jButtonAGREGAR = new javax.swing.JButton();
         TxtNombre = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -38,14 +41,37 @@ public class Interfazcliente extends javax.swing.JFrame {
         TxtSexo = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         TxtCiudad = new javax.swing.JTextField();
-        Agregar = new javax.swing.JButton();
-        Cancelar = new javax.swing.JButton();
-        Eliminar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelMENU = new javax.swing.JLabel();
+        jButtonMENU = new javax.swing.JButton();
+        jLabelELIMINAR = new javax.swing.JLabel();
+        jButtonAGREGAR1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelAGREGAR.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelAGREGAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/mas-simbolo-negro.png"))); // NOI18N
+        jLabelAGREGAR.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelAGREGARMouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabelAGREGAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 280, 60, 40));
+
+        jButtonAGREGAR.setBackground(new java.awt.Color(0, 0, 0));
+        jButtonAGREGAR.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jButtonAGREGAR.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAGREGAR.setText("ELIMINAR");
+        jButtonAGREGAR.setBorder(null);
+        jButtonAGREGAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAGREGARActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonAGREGAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 350, 180, 40));
 
         TxtNombre.setBorder(null);
         TxtNombre.addActionListener(new java.awt.event.ActionListener() {
@@ -53,17 +79,17 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtNombreActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 160, 30));
+        jPanel1.add(TxtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 160, 30));
 
         jLabel2.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Nombre");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 140, 30));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 160, 30));
 
         jLabel3.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Apellido");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 140, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 160, 30));
 
         TxtApellido.setBorder(null);
         TxtApellido.addActionListener(new java.awt.event.ActionListener() {
@@ -71,12 +97,12 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtApellidoActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 160, 30));
+        jPanel1.add(TxtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 160, 30));
 
         jLabel4.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Cédula");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 140, 30));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 160, 30));
 
         TxtCedula.setBorder(null);
         TxtCedula.addActionListener(new java.awt.event.ActionListener() {
@@ -84,12 +110,12 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtCedulaActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 160, 30));
+        jPanel1.add(TxtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 160, 30));
 
         jLabel5.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Correo Electrónico");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 140, 30));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 160, 30));
 
         TablaDatos.setAutoCreateRowSorter(true);
         TablaDatos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -98,6 +124,38 @@ public class Interfazcliente extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, ""},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null},
@@ -111,10 +169,10 @@ public class Interfazcliente extends javax.swing.JFrame {
         TablaDatos.setOpaque(false);
         jScrollPane1.setViewportView(TablaDatos);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 490, 140));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 760, 310));
 
         TxtCorreo.setBorder(null);
-        getContentPane().add(TxtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 160, 30));
+        jPanel1.add(TxtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 160, 30));
 
         TxtTelefono.setBorder(null);
         TxtTelefono.addActionListener(new java.awt.event.ActionListener() {
@@ -122,12 +180,12 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtTelefonoActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 160, 170, 30));
+        jPanel1.add(TxtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 160, 180, 30));
 
         jLabel9.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Teléfono");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 110, 30));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 160, 110, 30));
 
         TxtDireccion.setBorder(null);
         TxtDireccion.addActionListener(new java.awt.event.ActionListener() {
@@ -135,17 +193,17 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtDireccionActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, 170, 30));
+        jPanel1.add(TxtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 180, 30));
 
         jLabel8.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Dirección");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 100, 30));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 110, 30));
 
         jLabel7.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Sexo");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 100, 30));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 80, 110, 30));
 
         TxtSexo.setBorder(null);
         TxtSexo.addActionListener(new java.awt.event.ActionListener() {
@@ -153,12 +211,12 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtSexoActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 170, 30));
+        jPanel1.add(TxtSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 180, 30));
 
         jLabel6.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Ciudad");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, 100, 30));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 110, 30));
 
         TxtCiudad.setBorder(null);
         TxtCiudad.addActionListener(new java.awt.event.ActionListener() {
@@ -166,40 +224,51 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtCiudadActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 170, 30));
+        jPanel1.add(TxtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 180, 30));
 
-        Agregar.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        Agregar.setText("AGREGAR");
-        Agregar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Agregar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AgregarActionPerformed(evt);
+        jLabelMENU.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelMENU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/casa.png"))); // NOI18N
+        jLabelMENU.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelMENUMouseClicked(evt);
             }
         });
-        getContentPane().add(Agregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 110, 30));
+        jPanel1.add(jLabelMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 430, 60, 40));
 
-        Cancelar.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        Cancelar.setText("INICIO");
-        Cancelar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Cancelar.addActionListener(new java.awt.event.ActionListener() {
+        jButtonMENU.setBackground(new java.awt.Color(0, 0, 0));
+        jButtonMENU.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jButtonMENU.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonMENU.setText("MENU");
+        jButtonMENU.setBorder(null);
+        jButtonMENU.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CancelarActionPerformed(evt);
+                jButtonMENUActionPerformed(evt);
             }
         });
-        getContentPane().add(Cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 300, 110, 30));
+        jPanel1.add(jButtonMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 430, 180, 40));
 
-        Eliminar.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        Eliminar.setText("ELIMINAR");
-        Eliminar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Eliminar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EliminarActionPerformed(evt);
+        jLabelELIMINAR.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelELIMINAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/mas-simbolo-negro.png"))); // NOI18N
+        jLabelELIMINAR.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelELIMINARMouseClicked(evt);
             }
         });
-        getContentPane().add(Eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 260, 110, 30));
+        jPanel1.add(jLabelELIMINAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 350, 60, 40));
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 360));
+        jButtonAGREGAR1.setBackground(new java.awt.Color(0, 0, 0));
+        jButtonAGREGAR1.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jButtonAGREGAR1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAGREGAR1.setText("AGREGAR");
+        jButtonAGREGAR1.setBorder(null);
+        jButtonAGREGAR1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAGREGAR1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonAGREGAR1, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 280, 180, 40));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -239,26 +308,6 @@ public class Interfazcliente extends javax.swing.JFrame {
                 }
         ));
     }
-    private void AgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarActionPerformed
-        String Nom, Ape, Ciu, Sex, Dir, Cor_dir;
-        int Ced, Tel;
-        try {
-            Nom = TxtNombre.getText();
-            Ape = TxtApellido.getText();
-            Ciu = TxtCiudad.getText();
-            Sex = TxtSexo.getText();
-            Dir = TxtDireccion.getText();
-            Cor_dir = TxtCorreo.getText();
-            Ced = Integer.parseInt(TxtCedula.getText());
-            Tel = Integer.parseInt(TxtTelefono.getText());
-            cli.add(new Cliente(Nom, Ape, Ciu, Sex, Dir, Cor_dir, Ced, Tel));
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "verifique los datos");
-        }
-        Limpiar();
-        verDatos();
-    }//GEN-LAST:event_AgregarActionPerformed
-
     private void TxtApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtApellidoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtApellidoActionPerformed
@@ -283,7 +332,27 @@ public class Interfazcliente extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtTelefonoActionPerformed
 
-    private void EliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarActionPerformed
+    private void jLabelAGREGARMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelAGREGARMouseClicked
+        String Nom, Ape, Ciu, Sex, Dir, Cor_dir;
+        int Ced, Tel;
+        try {
+            Nom = TxtNombre.getText();
+            Ape = TxtApellido.getText();
+            Ciu = TxtCiudad.getText();
+            Sex = TxtSexo.getText();
+            Dir = TxtDireccion.getText();
+            Cor_dir = TxtCorreo.getText();
+            Ced = Integer.parseInt(TxtCedula.getText());
+            Tel = Integer.parseInt(TxtTelefono.getText());
+            cli.add(new Cliente(Nom, Ape, Ciu, Sex, Dir, Cor_dir, Ced, Tel));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "verifique los datos");
+        }
+        Limpiar();
+        verDatos();
+    }//GEN-LAST:event_jLabelAGREGARMouseClicked
+
+    private void jButtonAGREGARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAGREGARActionPerformed
         int a;
         try {
             a = TablaDatos.getSelectedRow();
@@ -292,13 +361,50 @@ public class Interfazcliente extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Por favor, escoga una fila");
         }
         verDatos();
-    }//GEN-LAST:event_EliminarActionPerformed
+    }//GEN-LAST:event_jButtonAGREGARActionPerformed
 
-    private void CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarActionPerformed
+    private void jLabelMENUMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelMENUMouseClicked
         Menu menu = new Menu();
         menu.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_CancelarActionPerformed
+    }//GEN-LAST:event_jLabelMENUMouseClicked
+
+    private void jButtonMENUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMENUActionPerformed
+        Menu menu = new Menu();
+        menu.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButtonMENUActionPerformed
+
+    private void jLabelELIMINARMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelELIMINARMouseClicked
+        int a;
+        try {
+            a = TablaDatos.getSelectedRow();
+            cli.remove(a);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Por favor, escoga una fila");
+        }
+        verDatos();
+    }//GEN-LAST:event_jLabelELIMINARMouseClicked
+
+    private void jButtonAGREGAR1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAGREGAR1ActionPerformed
+        String Nom, Ape, Ciu, Sex, Dir, Cor_dir;
+        int Ced, Tel;
+        try {
+            Nom = TxtNombre.getText();
+            Ape = TxtApellido.getText();
+            Ciu = TxtCiudad.getText();
+            Sex = TxtSexo.getText();
+            Dir = TxtDireccion.getText();
+            Cor_dir = TxtCorreo.getText();
+            Ced = Integer.parseInt(TxtCedula.getText());
+            Tel = Integer.parseInt(TxtTelefono.getText());
+            cli.add(new Cliente(Nom, Ape, Ciu, Sex, Dir, Cor_dir, Ced, Tel));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "verifique los datos");
+        }
+        Limpiar();
+        verDatos();
+    }//GEN-LAST:event_jButtonAGREGAR1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -339,9 +445,6 @@ public class Interfazcliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Agregar;
-    private javax.swing.JButton Cancelar;
-    private javax.swing.JButton Eliminar;
     private javax.swing.JTable TablaDatos;
     private javax.swing.JTextField TxtApellido;
     private javax.swing.JTextField TxtCedula;
@@ -351,7 +454,9 @@ public class Interfazcliente extends javax.swing.JFrame {
     private javax.swing.JTextField TxtNombre;
     private javax.swing.JTextField TxtSexo;
     private javax.swing.JTextField TxtTelefono;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButtonAGREGAR;
+    private javax.swing.JButton jButtonAGREGAR1;
+    private javax.swing.JButton jButtonMENU;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -360,6 +465,10 @@ public class Interfazcliente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelAGREGAR;
+    private javax.swing.JLabel jLabelELIMINAR;
+    private javax.swing.JLabel jLabelMENU;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
