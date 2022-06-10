@@ -45,6 +45,9 @@ public class Interfazcliente extends javax.swing.JFrame {
         jButtonMENU = new javax.swing.JButton();
         jLabelELIMINAR = new javax.swing.JLabel();
         jButtonAGREGAR1 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -59,7 +62,7 @@ public class Interfazcliente extends javax.swing.JFrame {
                 jLabelAGREGARMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabelAGREGAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 280, 60, 40));
+        jPanel1.add(jLabelAGREGAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 280, 60, 40));
 
         jButtonAGREGAR.setBackground(new java.awt.Color(0, 0, 0));
         jButtonAGREGAR.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
@@ -71,7 +74,7 @@ public class Interfazcliente extends javax.swing.JFrame {
                 jButtonAGREGARActionPerformed(evt);
             }
         });
-        jPanel1.add(jButtonAGREGAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 350, 180, 40));
+        jPanel1.add(jButtonAGREGAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 350, 180, 40));
 
         TxtNombre.setBorder(null);
         TxtNombre.addActionListener(new java.awt.event.ActionListener() {
@@ -169,7 +172,7 @@ public class Interfazcliente extends javax.swing.JFrame {
         TablaDatos.setOpaque(false);
         jScrollPane1.setViewportView(TablaDatos);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 760, 310));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 730, 330));
 
         TxtCorreo.setBorder(null);
         jPanel1.add(TxtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 160, 30));
@@ -180,12 +183,12 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtTelefonoActionPerformed(evt);
             }
         });
-        jPanel1.add(TxtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 160, 180, 30));
+        jPanel1.add(TxtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, 180, 30));
 
         jLabel9.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Teléfono");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 160, 110, 30));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 110, 30));
 
         TxtDireccion.setBorder(null);
         TxtDireccion.addActionListener(new java.awt.event.ActionListener() {
@@ -193,17 +196,17 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtDireccionActionPerformed(evt);
             }
         });
-        jPanel1.add(TxtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 180, 30));
+        jPanel1.add(TxtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, 180, 30));
 
         jLabel8.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Dirección");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 110, 30));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 110, 30));
 
         jLabel7.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Sexo");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 80, 110, 30));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 110, 30));
 
         TxtSexo.setBorder(null);
         TxtSexo.addActionListener(new java.awt.event.ActionListener() {
@@ -211,12 +214,12 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtSexoActionPerformed(evt);
             }
         });
-        jPanel1.add(TxtSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 180, 30));
+        jPanel1.add(TxtSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 180, 30));
 
         jLabel6.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Ciudad");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 110, 30));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 110, 30));
 
         TxtCiudad.setBorder(null);
         TxtCiudad.addActionListener(new java.awt.event.ActionListener() {
@@ -224,7 +227,7 @@ public class Interfazcliente extends javax.swing.JFrame {
                 TxtCiudadActionPerformed(evt);
             }
         });
-        jPanel1.add(TxtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 180, 30));
+        jPanel1.add(TxtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 30, 180, 30));
 
         jLabelMENU.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelMENU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/casa.png"))); // NOI18N
@@ -233,7 +236,7 @@ public class Interfazcliente extends javax.swing.JFrame {
                 jLabelMENUMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabelMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 430, 60, 40));
+        jPanel1.add(jLabelMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 430, 60, 40));
 
         jButtonMENU.setBackground(new java.awt.Color(0, 0, 0));
         jButtonMENU.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
@@ -245,16 +248,16 @@ public class Interfazcliente extends javax.swing.JFrame {
                 jButtonMENUActionPerformed(evt);
             }
         });
-        jPanel1.add(jButtonMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 430, 180, 40));
+        jPanel1.add(jButtonMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 430, 180, 40));
 
         jLabelELIMINAR.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelELIMINAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/mas-simbolo-negro.png"))); // NOI18N
+        jLabelELIMINAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eliminar (1).png"))); // NOI18N
         jLabelELIMINAR.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabelELIMINARMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabelELIMINAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 350, 60, 40));
+        jPanel1.add(jLabelELIMINAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 350, 60, 40));
 
         jButtonAGREGAR1.setBackground(new java.awt.Color(0, 0, 0));
         jButtonAGREGAR1.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
@@ -266,7 +269,20 @@ public class Interfazcliente extends javax.swing.JFrame {
                 jButtonAGREGAR1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButtonAGREGAR1, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 280, 180, 40));
+        jPanel1.add(jButtonAGREGAR1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 280, 180, 40));
+
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/servicio-al-cliente.png"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 5, 80, 200));
+
+        jLabel10.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("CLIENTE");
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 4, 220, 200));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 300, 210));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 540));
 
@@ -457,6 +473,8 @@ public class Interfazcliente extends javax.swing.JFrame {
     private javax.swing.JButton jButtonAGREGAR;
     private javax.swing.JButton jButtonAGREGAR1;
     private javax.swing.JButton jButtonMENU;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -469,6 +487,7 @@ public class Interfazcliente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelELIMINAR;
     private javax.swing.JLabel jLabelMENU;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

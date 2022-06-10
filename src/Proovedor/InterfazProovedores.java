@@ -31,7 +31,8 @@ public class InterfazProovedores extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         TxtNombre = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -48,14 +49,33 @@ public class InterfazProovedores extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        Eliminar = new javax.swing.JButton();
-        Agregar = new javax.swing.JButton();
-        Cancelar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         TablaDatos = new javax.swing.JTable();
-        SalirProovedor = new javax.swing.JButton();
+        jLabelAGREGAR = new javax.swing.JLabel();
+        jButtonELIMINAR = new javax.swing.JButton();
+        jLabelMENU = new javax.swing.JLabel();
+        jButtonMENU = new javax.swing.JButton();
+        jLabelELIMINAR = new javax.swing.JLabel();
+        jButtonAGREGAR = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TxtNombre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         TxtNombre.addActionListener(new java.awt.event.ActionListener() {
@@ -63,12 +83,15 @@ public class InterfazProovedores extends javax.swing.JFrame {
                 TxtNombreActionPerformed(evt);
             }
         });
+        jPanel1.add(TxtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 170, 30));
 
         jLabel2.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel2.setText("Nombre");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 120, 30));
 
         jLabel3.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel3.setText("Apellido");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 120, 30));
 
         TxtApellido.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         TxtApellido.addActionListener(new java.awt.event.ActionListener() {
@@ -76,6 +99,7 @@ public class InterfazProovedores extends javax.swing.JFrame {
                 TxtApellidoActionPerformed(evt);
             }
         });
+        jPanel1.add(TxtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 170, 30));
 
         TxtCedula.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         TxtCedula.addActionListener(new java.awt.event.ActionListener() {
@@ -83,14 +107,18 @@ public class InterfazProovedores extends javax.swing.JFrame {
                 TxtCedulaActionPerformed(evt);
             }
         });
+        jPanel1.add(TxtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 170, 30));
 
         jLabel4.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel4.setText("Cedula");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 120, 30));
 
         jLabel5.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel5.setText("Correo Electronico");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 120, 30));
 
         TxtCorreo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(TxtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 170, 30));
 
         TxtTelefono.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         TxtTelefono.addActionListener(new java.awt.event.ActionListener() {
@@ -98,6 +126,7 @@ public class InterfazProovedores extends javax.swing.JFrame {
                 TxtTelefonoActionPerformed(evt);
             }
         });
+        jPanel1.add(TxtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 180, 30));
 
         TxtDireccion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         TxtDireccion.addActionListener(new java.awt.event.ActionListener() {
@@ -105,6 +134,7 @@ public class InterfazProovedores extends javax.swing.JFrame {
                 TxtDireccionActionPerformed(evt);
             }
         });
+        jPanel1.add(TxtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, 180, 31));
 
         TxtSexo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         TxtSexo.addActionListener(new java.awt.event.ActionListener() {
@@ -112,6 +142,7 @@ public class InterfazProovedores extends javax.swing.JFrame {
                 TxtSexoActionPerformed(evt);
             }
         });
+        jPanel1.add(TxtSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, 180, 29));
 
         TxtCiudad.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         TxtCiudad.addActionListener(new java.awt.event.ActionListener() {
@@ -119,45 +150,23 @@ public class InterfazProovedores extends javax.swing.JFrame {
                 TxtCiudadActionPerformed(evt);
             }
         });
+        jPanel1.add(TxtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, 179, 30));
 
         jLabel6.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel6.setText("Ciudad");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, 150, 30));
 
         jLabel7.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel7.setText("Sexo");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 150, 30));
 
         jLabel8.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel8.setText("Direccion");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 150, 30));
 
         jLabel9.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         jLabel9.setText("Telefono");
-
-        Eliminar.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        Eliminar.setText("ELMINIAR");
-        Eliminar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Eliminar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EliminarActionPerformed(evt);
-            }
-        });
-
-        Agregar.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        Agregar.setText("AGREGAR");
-        Agregar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Agregar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AgregarActionPerformed(evt);
-            }
-        });
-
-        Cancelar.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        Cancelar.setText("CANCELAR");
-        Cancelar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Cancelar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CancelarActionPerformed(evt);
-            }
-        });
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 150, 30));
 
         jScrollPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
@@ -171,6 +180,39 @@ public class InterfazProovedores extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null}
             },
             new String [] {
@@ -180,112 +222,100 @@ public class InterfazProovedores extends javax.swing.JFrame {
         TablaDatos.setOpaque(false);
         jScrollPane1.setViewportView(TablaDatos);
 
-        SalirProovedor.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
-        SalirProovedor.setText("SALIR");
-        SalirProovedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        SalirProovedor.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SalirProovedorMouseClicked(evt);
-            }
-        });
-        SalirProovedor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SalirProovedorActionPerformed(evt);
-            }
-        });
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 660, 290));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 930, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 930, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 0, 0)
-                                    .addComponent(TxtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(30, 30, 30)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 0, 0)
-                                    .addComponent(TxtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(71, 71, 71)
-                                    .addComponent(Agregar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 0, 0)
-                                    .addComponent(TxtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(30, 30, 30)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 0, 0)
-                                    .addComponent(TxtSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(70, 70, 70)
-                                    .addComponent(Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 0, 0)
-                                    .addComponent(TxtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(30, 30, 30)
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 0, 0)
-                                    .addComponent(TxtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(70, 70, 70)
-                                    .addComponent(Cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 0, 0)
-                                    .addComponent(TxtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(30, 30, 30)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 0, 0)
-                                    .addComponent(TxtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(70, 70, 70)
-                                    .addComponent(SalirProovedor, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGap(0, 0, Short.MAX_VALUE)))
+        jLabelAGREGAR.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelAGREGAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/mas-simbolo-negro.png"))); // NOI18N
+        jLabelAGREGAR.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelAGREGARMouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabelAGREGAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 230, 60, 40));
+
+        jButtonELIMINAR.setBackground(new java.awt.Color(0, 0, 0));
+        jButtonELIMINAR.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jButtonELIMINAR.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonELIMINAR.setText("ELIMINAR");
+        jButtonELIMINAR.setBorder(null);
+        jButtonELIMINAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonELIMINARActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonELIMINAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 300, 180, 40));
+
+        jLabelMENU.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelMENU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/casa.png"))); // NOI18N
+        jLabelMENU.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelMENUMouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabelMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 370, 60, 40));
+
+        jButtonMENU.setBackground(new java.awt.Color(0, 0, 0));
+        jButtonMENU.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jButtonMENU.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonMENU.setText("MENU");
+        jButtonMENU.setBorder(null);
+        jButtonMENU.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMENUActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 370, 180, 40));
+
+        jLabelELIMINAR.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelELIMINAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eliminar (1).png"))); // NOI18N
+        jLabelELIMINAR.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelELIMINARMouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabelELIMINAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 300, 60, 40));
+
+        jButtonAGREGAR.setBackground(new java.awt.Color(0, 0, 0));
+        jButtonAGREGAR.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jButtonAGREGAR.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAGREGAR.setText("AGREGAR");
+        jButtonAGREGAR.setBorder(null);
+        jButtonAGREGAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAGREGARActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonAGREGAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 230, 180, 40));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/mensajero.png"))); // NOI18N
+
+        jLabel11.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel11.setText("PROVEEDORES");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TxtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TxtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Agregar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(20, 20, 20)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TxtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TxtSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(20, 20, 20)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TxtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TxtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(19, 19, 19)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TxtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TxtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(SalirProovedor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(17, 17, 17)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(55, Short.MAX_VALUE))
         );
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 0, 350, 170));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -318,7 +348,27 @@ public class InterfazProovedores extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtCiudadActionPerformed
 
-    private void EliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarActionPerformed
+    private void jLabelAGREGARMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelAGREGARMouseClicked
+        String Nom, Ape, Ciu, Sex, Dir, Cor_dir;
+        int Ced, Tel;
+        try {
+            Nom = TxtNombre.getText();
+            Ape = TxtApellido.getText();
+            Ciu = TxtCiudad.getText();
+            Sex = TxtSexo.getText();
+            Dir = TxtDireccion.getText();
+            Cor_dir = TxtCorreo.getText();
+            Ced = Integer.parseInt(TxtCedula.getText());
+            Tel = Integer.parseInt(TxtTelefono.getText());
+            prov.add(new Proveedor(Nom, Ape, Ciu, Sex, Dir, Cor_dir, Ced, Tel));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "verifique los datos");
+        }
+        Limpiar();
+        verDatos();
+    }//GEN-LAST:event_jLabelAGREGARMouseClicked
+
+    private void jButtonELIMINARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonELIMINARActionPerformed
         int a;
         try {
             a = TablaDatos.getSelectedRow();
@@ -327,10 +377,33 @@ public class InterfazProovedores extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Por favor, escoga una fila");
         }
         verDatos();
-    }//GEN-LAST:event_EliminarActionPerformed
+    }//GEN-LAST:event_jButtonELIMINARActionPerformed
 
-    private void AgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarActionPerformed
-         String Nom, Ape, Ciu, Sex, Dir, Cor_dir;
+    private void jLabelMENUMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelMENUMouseClicked
+        Menu menu = new Menu();
+        menu.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jLabelMENUMouseClicked
+
+    private void jButtonMENUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMENUActionPerformed
+        Menu menu = new Menu();
+        menu.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButtonMENUActionPerformed
+
+    private void jLabelELIMINARMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelELIMINARMouseClicked
+        int a;
+        try {
+            a = TablaDatos.getSelectedRow();
+            prov.remove(a);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Por favor, escoga una fila");
+        }
+        verDatos();
+    }//GEN-LAST:event_jLabelELIMINARMouseClicked
+
+    private void jButtonAGREGARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAGREGARActionPerformed
+        String Nom, Ape, Ciu, Sex, Dir, Cor_dir;
         int Ced, Tel;
         try {
             Nom = TxtNombre.getText();
@@ -347,26 +420,7 @@ public class InterfazProovedores extends javax.swing.JFrame {
         }
         Limpiar();
         verDatos();
-    }//GEN-LAST:event_AgregarActionPerformed
-
-    private void CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarActionPerformed
-        Menu menu = new Menu();
-        menu.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_CancelarActionPerformed
-
-    private void SalirProovedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SalirProovedorMouseClicked
-        int Dialog = JOptionPane.YES_NO_OPTION;
-        int Result = JOptionPane.showConfirmDialog(null, "¿Desea salir de la pantalla?", "Exit",
-                Dialog);
-        if (Result == 0) {
-            System.exit(0);
-        }
-    }//GEN-LAST:event_SalirProovedorMouseClicked
-
-    private void SalirProovedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirProovedorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SalirProovedorActionPerformed
+    }//GEN-LAST:event_jButtonAGREGARActionPerformed
 
     /**
      * @param args the command line arguments
@@ -436,10 +490,6 @@ public class InterfazProovedores extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Agregar;
-    private javax.swing.JButton Cancelar;
-    private javax.swing.JButton Eliminar;
-    private javax.swing.JButton SalirProovedor;
     private javax.swing.JTable TablaDatos;
     private javax.swing.JTextField TxtApellido;
     private javax.swing.JTextField TxtCedula;
@@ -449,7 +499,11 @@ public class InterfazProovedores extends javax.swing.JFrame {
     private javax.swing.JTextField TxtNombre;
     private javax.swing.JTextField TxtSexo;
     private javax.swing.JTextField TxtTelefono;
+    private javax.swing.JButton jButtonAGREGAR;
+    private javax.swing.JButton jButtonELIMINAR;
+    private javax.swing.JButton jButtonMENU;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -458,6 +512,12 @@ public class InterfazProovedores extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelAGREGAR;
+    private javax.swing.JLabel jLabelELIMINAR;
+    private javax.swing.JLabel jLabelMENU;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

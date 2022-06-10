@@ -7,6 +7,7 @@ package Productos;
 
 import Menu.Menu;
 import javax.swing.JOptionPane;
+import Inventario.InterfazInventario;
 
 /**
  *
@@ -161,14 +162,13 @@ public class InterfazProductos extends javax.swing.JFrame {
         });
         jPanel1.add(jLabelINVENTARIO, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 50, 40));
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("PRODUCTOS DE TU COMPRA");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 290, 80));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo azul.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel1.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 250));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 600));
@@ -183,7 +183,9 @@ public class InterfazProductos extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonMENUActionPerformed
 
     private void buttonINVENTARIOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonINVENTARIOActionPerformed
-        // TODO add your handling code here:
+        InterfazInventario interfazoinventario = new InterfazInventario(); 
+        interfazoinventario.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_buttonINVENTARIOActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -196,7 +198,9 @@ public class InterfazProductos extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jLabelINVENTARIOMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelINVENTARIOMouseClicked
-        // TODO add your handling code here:
+        InterfazInventario interfazoinventario = new InterfazInventario(); 
+        interfazoinventario.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jLabelINVENTARIOMouseClicked
 
     private void jLabelMENUMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelMENUMouseClicked

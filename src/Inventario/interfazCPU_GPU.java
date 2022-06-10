@@ -42,6 +42,8 @@ public class interfazCPU_GPU extends javax.swing.JFrame {
         jButtonMENU = new javax.swing.JButton();
         jLabelSALIR2 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -200,6 +202,14 @@ public class interfazCPU_GPU extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 460, 180, 40));
 
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/graphic-card.png"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 90, 110));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 0, 180, 170));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -273,8 +283,10 @@ public class interfazCPU_GPU extends javax.swing.JFrame {
     private javax.swing.JButton jButtonMENU;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelMENU;
     private javax.swing.JLabel jLabelSALIR2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;

@@ -11,6 +11,8 @@ import Inventario.interfazMonitores;
 import Inventario.interfazCPU_GPU;
 import Inventario.interfazMouse;
 import Inventario.interfazTeclado;
+import Inventario.interfazStorage;
+import Inventario.interfazMemorias;
 
 /**
  *
@@ -52,13 +54,17 @@ public class InterfazInventario extends javax.swing.JFrame {
         jButtonMENU = new javax.swing.JButton();
         jLabelSALIR2 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabelMONITORES.setText("jLabel1");
+        jLabelMONITORES.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelMONITORES.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/imac.png"))); // NOI18N
         jLabelMONITORES.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabelMONITORESMouseClicked(evt);
@@ -75,7 +81,8 @@ public class InterfazInventario extends javax.swing.JFrame {
         });
         jPanel1.add(jButtonMONITORES, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 110, 51));
 
-        jLabelCPU_GPU.setText("jLabel1");
+        jLabelCPU_GPU.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelCPU_GPU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gpu.png"))); // NOI18N
         jLabelCPU_GPU.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabelCPU_GPUMouseClicked(evt);
@@ -92,7 +99,8 @@ public class InterfazInventario extends javax.swing.JFrame {
         });
         jPanel1.add(jButtonCPU_GPU, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 110, 51));
 
-        jLabelMOUSE.setText("jLabel1");
+        jLabelMOUSE.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelMOUSE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/herramienta-de-mouse-inalambrico (1).png"))); // NOI18N
         jLabelMOUSE.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabelMOUSEMouseClicked(evt);
@@ -109,7 +117,8 @@ public class InterfazInventario extends javax.swing.JFrame {
         });
         jPanel1.add(jButtonMOUSE, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 110, 51));
 
-        jLabelTECLADO.setText("jLabel1");
+        jLabelTECLADO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelTECLADO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/teclado.png"))); // NOI18N
         jLabelTECLADO.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabelTECLADOMouseClicked(evt);
@@ -126,14 +135,31 @@ public class InterfazInventario extends javax.swing.JFrame {
         });
         jPanel1.add(jButtonTECLADO, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 110, 50));
 
-        jLabelALMACENAMIENTO.setText("jLabel1");
+        jLabelALMACENAMIENTO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelALMACENAMIENTO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/almacenamiento-de-disco.png"))); // NOI18N
+        jLabelALMACENAMIENTO.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelALMACENAMIENTOMouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabelALMACENAMIENTO, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 250, 80, 51));
 
         jButtonALMACENAMIENTO.setText("STORAGE");
         jButtonALMACENAMIENTO.setBorder(null);
+        jButtonALMACENAMIENTO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonALMACENAMIENTOActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButtonALMACENAMIENTO, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 250, 110, 51));
 
-        jLabelMEMORIAS.setText("jLabel1");
+        jLabelMEMORIAS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelMEMORIAS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/memoria-ram.png"))); // NOI18N
+        jLabelMEMORIAS.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelMEMORIASMouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabelMEMORIAS, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 70, 51));
 
         MEMORIAS.setText("MEMORIAS");
@@ -186,6 +212,19 @@ public class InterfazInventario extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 210, 180, 40));
+
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/inventario.png"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 0, 130, 90));
+
+        jLabel2.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("INVENTARIO");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 90));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 90));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 410));
 
@@ -259,7 +298,9 @@ public class InterfazInventario extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabelMOUSEMouseClicked
 
     private void MEMORIASActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MEMORIASActionPerformed
-        // TODO add your handling code here:
+        interfazMemorias interfazMemoria = new interfazMemorias();
+        interfazMemoria.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_MEMORIASActionPerformed
 
     private void jButtonTECLADOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTECLADOActionPerformed
@@ -273,6 +314,24 @@ public class InterfazInventario extends javax.swing.JFrame {
         interfazTeclado.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jLabelTECLADOMouseClicked
+
+    private void jLabelMEMORIASMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelMEMORIASMouseClicked
+        interfazMemorias interfazMemoria = new interfazMemorias();
+        interfazMemoria.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jLabelMEMORIASMouseClicked
+
+    private void jButtonALMACENAMIENTOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonALMACENAMIENTOActionPerformed
+       interfazStorage interfazstorage = new interfazStorage();
+        interfazstorage.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButtonALMACENAMIENTOActionPerformed
+
+    private void jLabelALMACENAMIENTOMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelALMACENAMIENTOMouseClicked
+        interfazStorage interfazstorage = new interfazStorage();
+        interfazstorage.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jLabelALMACENAMIENTOMouseClicked
 
     /**
      * @param args the command line arguments
@@ -318,6 +377,8 @@ public class InterfazInventario extends javax.swing.JFrame {
     private javax.swing.JButton jButtonMONITORES;
     private javax.swing.JButton jButtonMOUSE;
     private javax.swing.JButton jButtonTECLADO;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabelALMACENAMIENTO;
     private javax.swing.JLabel jLabelCPU_GPU;
     private javax.swing.JLabel jLabelMEMORIAS;
@@ -327,5 +388,6 @@ public class InterfazInventario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelSALIR2;
     private javax.swing.JLabel jLabelTECLADO;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

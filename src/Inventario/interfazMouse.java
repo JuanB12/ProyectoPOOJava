@@ -7,6 +7,7 @@ package Inventario;
 import javax.swing.JOptionPane;
 import Inventario.InterfazInventario;
 import Inventario.Mouse;
+
 /**
  *
  * @author Lenovo
@@ -40,6 +41,8 @@ public class interfazMouse extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -90,6 +93,8 @@ public class interfazMouse extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 578, 600));
+
         jLabelSALIR.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelSALIR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/registrarse.png"))); // NOI18N
         jLabelSALIR.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -97,6 +102,7 @@ public class interfazMouse extends javax.swing.JFrame {
                 jLabelSALIRMouseClicked(evt);
             }
         });
+        jPanel1.add(jLabelSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 283, 50, 40));
 
         jButtonSALIR.setBackground(new java.awt.Color(0, 0, 0));
         jButtonSALIR.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
@@ -108,6 +114,7 @@ public class interfazMouse extends javax.swing.JFrame {
                 jButtonSALIRActionPerformed(evt);
             }
         });
+        jPanel1.add(jButtonSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(638, 283, 180, 40));
 
         jLabelMENU.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelMENU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/casa.png"))); // NOI18N
@@ -116,6 +123,7 @@ public class interfazMouse extends javax.swing.JFrame {
                 jLabelMENUMouseClicked(evt);
             }
         });
+        jPanel1.add(jLabelMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 233, 50, 40));
 
         jButtonMENU.setBackground(new java.awt.Color(0, 0, 0));
         jButtonMENU.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
@@ -127,41 +135,7 @@ public class interfazMouse extends javax.swing.JFrame {
                 jButtonMENUActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabelMENU, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(jButtonMENU, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabelSALIR, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(jButtonSALIR, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(42, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(233, 233, 233)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelMENU, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonMENU, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelSALIR, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonSALIR, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jPanel1.add(jButtonMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(638, 233, 180, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 600));
 

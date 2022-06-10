@@ -20,6 +20,10 @@ public class Storage {
         this.Tipo = Tipo;
     }
 
+    Storage(String Nom, String Tip, int Can) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getCantidad() {
         return cantidad;
     }
